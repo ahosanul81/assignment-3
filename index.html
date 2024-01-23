@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .font-manrope {
+            font-family: 'Inter', sans-serif;
+            font-family: 'Manrope', sans-serif;
+            font-family: 'Mulish', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+        }
+        /* .card-a{
+            background: linear-gradient(rgba(6, 6, 6, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url('./Images/2.png');
+            background-repeat: no-repeat;
+        }
+        .card-b{
+            background: linear-gradient(rgba(6, 6, 6, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url('./Images/3.png');
+            background-repeat: no-repeat;
+        }
+        .card-c{
+            background: linear-gradient(rgba(6, 6, 6, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url('./Images/4.png');
+            background-repeat: no-repeat;
+        } */
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#FF4240',
+                        'hockey-primary': '#FF4240',
+                        'p-color': '#FF4240',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class=".font-manrope">
+    <header>
+        <div class="container mx-auto">
+            <div class="navbar bg-base-100 mb-24">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl">Hockey<span class="text-hockey-primary">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-hockey-primary" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn btn-ghost bg-hockey-primary text-white"> Get Ticket</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- couresel -->
+
+        <section class="container mx-auto">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img class="w-full h-[550px]" src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img class="w-full h-[550px]" src="./Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img class="w-full h-[550px]" src="./Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <!-- Professional Hockeys Club -->
+        <section class="container mx-auto mt-24">
+            <div class="Professional-content text-center mb-9 w-3/5 mx-auto">
+                <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic porro aut cumque vel maxime
+                    necessitatibus iure voluptatibus pariatur soluta adipisci. Quos, alias ima.</p>
+            </div>
+            <div class="Professional-percentage flex gap-8 justify-center">
+                <div  class="text-center">
+                    <div class="radial-progress text-red-500 text-center" style="--value:87;" role="progressbar">87%</div>
+                    <div> 
+                        <h4>Prayer Facility</h4>
+                        <p>Lorem ipsum dolor amet Architecto, nihil.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-green-500" style="--value:87;" role="progressbar">87%</div>
+                    <div> 
+                        <h4>Experienced Coach</h4>
+                        <p>Lorem ipsum dolor sit, Architecto, nihil.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-orange-500" style="--value:90;" role="progressbar">90%</div>
+                    <div> 
+                        <h4>Senior Player</h4>
+                        <p>Lorem ipsum dolor  Architecto, nihil.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar">80%</div>
+                    <div> 
+                        <h4>Training Ground</h4>
+                        <p>Lorem ipsum dolor Architecto, nihil.</p>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+
+
+        <!-- Program Sections -->
+        <section class="container mx-auto mt-24">
+            <div class="Program-description text-center space-y-3 mb-11">
+                <h3 class="text-3xl font-extrabold">Program Sections</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro, provident cum quis alias commodi.</p>
+            </div>
+
+            <div class="program-content grid grid-cols-2 gap-5">
+
+                <div class="card w-full bg-base-50 shadow-xl image-full">
+                    <figure><img class="w-full" src="./Images/2.png"/></figure>
+                    <div class="card-body pt-32">
+                      <h2 class="card-title text-4xl font-extrabold">Junior Program</h2>
+                      <p>If a dog chews shoes whose shoes does he choose? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati, similique minus porro, fugit esse molestiae enim reprehenderit optio ratione sunt. Eligendi id harum fugit veniam ipsam unde atque aut?</p>
+                     <button class="btn btn-ghost bg-hockey-primary w-52">Register Now!</button>
+                    </div>
+                </div>
+                <div class="card w-full bg-base-50 shadow-xl image-full">
+                    <figure><img class="w-full" src="./Images/3.png"/></figure>
+                    <div class="card-body pt-32">
+                      <h2 class="card-title text-4xl font-extrabold">Junior Program</h2>
+                      <p>If a dog chews shoes whose shoes does he choose? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati, similique minus porro, fugit esse molestiae enim reprehenderit optio ratione sunt. Eligendi id harum fugit veniam ipsam unde atque aut?</p>
+                     <button class="btn btn-ghost bg-hockey-primary w-52">Register Now!</button>
+                    </div>
+                </div>
+                <div class="card w-full col-span-2 bg-base-50 shadow-xl image-full">
+                    <figure><img class="w-full" src="./Images/4.png"/></figure>
+                    <div class="card-body pt-32">
+                      <h2 class="card-title text-4xl font-extrabold">Junior Program</h2>
+                      <p>If a dog chews shoes whose shoes does he choose? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati, similique minus porro, fugit esse molestiae enim reprehenderit optio ratione sunt. Eligendi id harum fugit veniam ipsam unde atque aut?</p>
+                     <button class="btn btn-ghost bg-hockey-primary w-52">Register Now!</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Our New Products -->
+        <section class="container mx-auto mt-24">
+            <h1 class="text-center text-4xl font-extrabold"> Our New Products</h1>
+            <p class="text-center mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, veniam? Maxime maiores nostrum saepe et nobis aspernatur corporis, necessitatibus quod?</p>
+
+
+            <div class="product-card grid grid-cols-2 gap-6">
+                <div class="flex items-center gap-4 w-full shadow-md border border-gray-200 rounded-lg p-6">
+                    <div><img src="./Images/5.png" alt=""></div>
+                    <div class="">
+                        <div class="flex gap-4">
+                            <h5><i class="fa-solid fa-star"></i> 5.0</h5>
+                            <h5><i class="fa-solid fa-eye"></i> 20</h5>
+                            <h5><i class="fa-solid fa-heart"></i> 200</h5>
+                        </div>
+                        <div >
+                            <h1>World Cup Flags Football</h1>
+                            <p class="text-[#13131880] font-medium">Lorem ipsum dolor sit, amet consectetur adipisic</p>
+                        </div>
+                        <div  class="flex gap-4">
+                            <h3 class="text-hockey-primary font-extrabold">Price - $22.00</h3>
+                            <h2 class="text-[#13131880] font-medium"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</h2>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full shadow-md border border-gray-200 rounded-lg p-6">
+                    <div><img src="./Images/6.png" alt=""></div>
+                    <div class="">
+                        <div class="flex gap-4">
+                            <h5><i class="fa-solid fa-star"></i> 5.0</h5>
+                            <h5><i class="fa-solid fa-eye"></i> 20</h5>
+                            <h5><i class="fa-solid fa-heart"></i> 200</h5>
+                        </div>
+                        <div >
+                            <h1>World Cup Flags Football</h1>
+                            <p class="text-[#13131880] font-medium">Lorem ipsum dolor sit, amet consectetur adipisic</p>
+                        </div>
+                        <div  class="flex gap-4">
+                            <h3 class="text-hockey-primary font-extrabold">Price - $22.00</h3>
+                            <h2 class="text-[#13131880] font-medium"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</h2>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full shadow-md border border-gray-200 rounded-lg p-6">
+                    <div><img src="./Images/7.png" alt=""></div>
+                    <div class="">
+                        <div class="flex gap-4">
+                            <h5><i class="fa-solid fa-star"></i> 5.0</h5>
+                            <h5><i class="fa-solid fa-eye"></i> 20</h5>
+                            <h5><i class="fa-solid fa-heart"></i> 200</h5>
+                        </div>
+                        <div >
+                            <h1>World Cup Flags Football</h1>
+                            <p class="text-[#13131880] font-medium">Lorem ipsum dolor sit, amet consectetur adipisic</p>
+                        </div>
+                        <div  class="flex gap-4">
+                            <h3 class="text-hockey-primary font-extrabold">Price - $22.00</h3>
+                            <h2 class="text-[#13131880] font-medium"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</h2>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full shadow-md border border-gray-200 rounded-lg p-6">
+                    <div><img src="./Images/8.png" alt=""></div>
+                    <div class="">
+                        <div class="flex gap-4">
+                            <h5><i class="fa-solid fa-star"></i> 5.0</h5>
+                            <h5><i class="fa-solid fa-eye"></i> 20</h5>
+                            <h5><i class="fa-solid fa-heart"></i> 200</h5>
+                        </div>
+                        <div >
+                            <h1>World Cup Flags Football</h1>
+                            <p class="text-[#13131880] font-medium">Lorem ipsum dolor sit, amet consectetur adipisic</p>
+                        </div>
+                        <div  class="flex gap-4">
+                            <h3 class="text-hockey-primary font-extrabold">Price - $22.00</h3>
+                            <h2 class="text-[#13131880] font-medium"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</h2>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full shadow-md border border-gray-200 rounded-lg p-6">
+                    <div><img src="./Images/9.png" alt=""></div>
+                    <div class="">
+                        <div class="flex gap-4">
+                            <h5><i class="fa-solid fa-star"></i> 5.0</h5>
+                            <h5><i class="fa-solid fa-eye"></i> 20</h5>
+                            <h5><i class="fa-solid fa-heart"></i> 200</h5>
+                        </div>
+                        <div >
+                            <h1>World Cup Flags Football</h1>
+                            <p class="text-[#13131880] font-medium">Lorem ipsum dolor sit, amet consectetur adipisic</p>
+                        </div>
+                        <div  class="flex gap-4">
+                            <h3 class="text-hockey-primary font-extrabold">Price - $22.00</h3>
+                            <h2 class="text-[#13131880] font-medium"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</h2>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 w-full shadow-md border border-gray-200 rounded-lg p-6">
+                    <div><img src="./Images/10.png" alt=""></div>
+                    <div class="">
+                        <div class="flex gap-4">
+                            <h5><i class="fa-solid fa-star"></i> 5.0</h5>
+                            <h5><i class="fa-solid fa-eye"></i> 20</h5>
+                            <h5><i class="fa-solid fa-heart"></i> 200</h5>
+                        </div>
+                        <div >
+                            <h1>World Cup Flags Football</h1>
+                            <p class="text-[#13131880] font-medium">Lorem ipsum dolor sit, amet consectetur adipisic</p>
+                        </div>
+                        <div  class="flex gap-4">
+                            <h3 class="text-hockey-primary font-extrabold">Price - $22.00</h3>
+                            <h2 class="text-[#13131880] font-medium"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</h2>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+    </main>
+</body>
+
+</html>
